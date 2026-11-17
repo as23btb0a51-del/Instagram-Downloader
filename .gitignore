@@ -1,0 +1,10 @@
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Temporary SQLite / Python test files
+*.pyc
+__pycache__/
+temp.db
+temp_places*.sqlite

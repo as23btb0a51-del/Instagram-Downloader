@@ -1,0 +1,10 @@
+{
+  "name": "com.instagram.downloader",
+  "description": "Native Host for Instagram Photo Downloader",
+  "path": "c:\\Users\\shiva\\Downloads\\extenstions\\native_host.bat",
+  "type": "stdio",
+  "allowed_extensions": [
+    "instagram-downloader-pro@shiva.dev",
+    "ig-photo-downloader@antigravity.user"
+  ]
+}

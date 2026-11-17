@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Downloader</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <!-- Header with Toggle -->
+    <header class="header">
+      <div class="header-brand">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </div>
+        <span class="app-title">IG Downloader</span>
+      </div>
+
+      <label class="switch" title="Toggle Extension On/Off">
+        <input type="checkbox" id="toggleExtension" checked>
+        <span class="slider"></span>
+      </label>
+    </header>
+
+    <!-- Destination Folder Selection -->
+    <div class="folder-section">
+      <div class="input-wrapper">
+        <input 
+          type="text" 
+          id="folderInput" 
+          placeholder="Downloads (default)" 
+          spellcheck="false"
+          autocomplete="off"
+          title="Default is Downloads. Type path or click folder icon to change"
+        />
+        <button id="browseFolderBtn" class="browse-btn" type="button" title="Browse custom folder...">
+          <svg viewBox="0 0 24 24">
+            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+          </svg>
+        </button>
+      </div>
+      <div id="saveFeedback" class="feedback-msg"></div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
